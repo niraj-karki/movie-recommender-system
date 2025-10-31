@@ -1,0 +1,15 @@
+api:
+  base_url: "https://api.themoviedb.org/3"
+  key: "${TMDB_API_KEY}"
+  language: "en-US"
+  region: "US"
+
+request:
+  items_per_page: 20
+  total_pages: 500
+
+paths:
+  raw_data: "data/raw/popular_movies.json"
+  backup_dir: "data/raw/backups/"
+  enriched_data: "data/processed/enriched_movies.json"
+  enriched_backup_dir: "data/processed/backups/"
